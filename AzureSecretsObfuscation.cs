@@ -143,7 +143,7 @@ namespace AzureKeyObfuscation
 
 
         /// <summary>
-        /// Gets the path of the approved input file
+        /// Gets the path of the input and output files
         /// </summary>
         /// <param name="file"></param>
         /// <returns></returns>
