@@ -157,19 +157,5 @@ namespace AzureKeyObfuscation
 
         }
 
-        /// <summary>
-        /// Gets the path of the approved output file
-        /// </summary>
-        /// <param name="outputFile"></param>
-        /// <returns></returns>
-        //private static async Task<string> GetOutputFilePath(string outputFile)
-        //{
-        //    await Task.Delay(0);
-        //    var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
-        //    if (parent?.Parent?.Parent == null) return string.Empty;
-        //    var filePath = $"{parent.Parent?.Parent.FullName}\\{outputFile}";
-        //    return filePath;
-
-        //}
     }
 }
