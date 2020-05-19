@@ -33,8 +33,8 @@ namespace AzureKeyObfuscation
         {
            try
            {
-               var infilePath = await GetInputFilePath(inputFile);
-               var outfilePath = await GetOutputFilePath(OutfileName);
+               var infilePath = await GetFilePath(inputFile);
+               var outfilePath = await GetFilePath(OutfileName);
                await File.WriteAllTextAsync(outfilePath, string.Empty);
                await using var readStream= File.OpenRead(infilePath);
                using var reader = new StreamReader(readStream);
@@ -145,14 +145,14 @@ namespace AzureKeyObfuscation
         /// <summary>
         /// Gets the path of the approved input file
         /// </summary>
-        /// <param name="inputFile"></param>
+        /// <param name="file"></param>
         /// <returns></returns>
-        private static async Task<string> GetInputFilePath(string inputFile)
+        private static async Task<string> GetFilePath(string file)
         {
             await Task.Delay(0);
             var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
             if (parent?.Parent?.Parent == null) return string.Empty;
-            var filePath = $"{parent.Parent?.Parent.FullName}\\{inputFile}";
+            var filePath = $"{parent.Parent?.Parent.FullName}\\{file}";
             return filePath;
 
         }
@@ -162,14 +162,14 @@ namespace AzureKeyObfuscation
         /// </summary>
         /// <param name="outputFile"></param>
         /// <returns></returns>
-        private static async Task<string> GetOutputFilePath(string outputFile)
-        {
-            await Task.Delay(0);
-            var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
-            if (parent?.Parent?.Parent == null) return string.Empty;
-            var filePath = $"{parent.Parent?.Parent.FullName}\\{outputFile}";
-            return filePath;
+        //private static async Task<string> GetOutputFilePath(string outputFile)
+        //{
+        //    await Task.Delay(0);
+        //    var parent = Directory.GetParent(Directory.GetCurrentDirectory()).Parent;
+        //    if (parent?.Parent?.Parent == null) return string.Empty;
+        //    var filePath = $"{parent.Parent?.Parent.FullName}\\{outputFile}";
+        //    return filePath;
 
-        }
+        //}
     }
 }
