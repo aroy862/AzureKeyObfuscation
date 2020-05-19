@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30104.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureKeyObfuscation", "AzureKeyObfuscation.csproj", "{640E9435-FC65-4065-8599-1647AE19BDB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{640E9435-FC65-4065-8599-1647AE19BDB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{640E9435-FC65-4065-8599-1647AE19BDB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{640E9435-FC65-4065-8599-1647AE19BDB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{640E9435-FC65-4065-8599-1647AE19BDB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0FF1675-0C8A-490A-BE91-D8C21E137BFD}
+	EndGlobalSection
+EndGlobal
